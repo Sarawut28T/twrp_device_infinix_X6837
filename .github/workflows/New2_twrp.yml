@@ -95,4 +95,4 @@ jobs:
        tag_name: Infinix_HOT_40_Pro-X6837
        name: TWRP370_12-twrp-12
        files: | 
-         twrp/out/target/product/X6837/*boot*.img
+         twrp/out/target/product/X6837/*vendor_boot*.img
