@@ -14,6 +14,6 @@
 # limitations under the License.
 #
 
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/twrp_X676C.mk
+PRODUCT_MAKEFILES := $(LOCAL_DIR)/twrp_X6837.mk
 
-COMMON_LUNCH_CHOICES := twrp_X676C-eng
+COMMON_LUNCH_CHOICES := twrp_X6837-eng
