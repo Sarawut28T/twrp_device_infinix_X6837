@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/infinix/X676C
+DEVICE_PATH := device/infinix/X6837
 
 # Build Hack
 BUILD_BROKEN_DUP_RULES := true
@@ -41,10 +41,10 @@ TARGET_SUPPORTS_64_BIT_APPS := true
 TARGET_IS_64_BIT := true
 
 # Assertation
-TARGET_OTA_ASSERT_DEVICE := Infinix-X676C,Infinix X676C,X676C-OP
+TARGET_OTA_ASSERT_DEVICE := Infinix-X6837,Infinix X6837,X6837-OP
 
-# Bootloader x676c_h891
-TARGET_BOOTLOADER_BOARD_NAME := Infinix-X676C
+# Bootloader x6837_h897
+TARGET_BOOTLOADER_BOARD_NAME := Infinix-X6837
 TARGET_NO_BOOTLOADER := true
 TARGET_USES_UEFI := true
 
@@ -222,7 +222,7 @@ TW_DEFAULT_LANGUAGE := ru
 TW_INPUT_BLACKLIST := hbtp_vm
 TW_MAX_BRIGHTNESS := 255
 TW_DEFAULT_BRIGHTNESS := 100
-TW_DEVICE_VERSION := Infinix Note 12 2023_X676C-V848 - lopestom
+TW_DEVICE_VERSION := Infinix HOT 40 Pro_X6837- Sarawut28T
 TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone28/temp
 TW_EXTRA_LANGUAGES := false
 TARGET_USES_MKE2FS := true
