@@ -14,9 +14,9 @@ on:
 
 env:
   MANIFEST: https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp -b twrp-12.1
-  DEVICE: X676C
-  DT_LINK: https://github.com/lopestom/twrp_device_infinix_X676C
-  DT_PATH: device/infinix/X676C
+  DEVICE: X6837
+  DT_LINK: https://github.com/Sarawut28T/twrp_device_infinix_X6837
+  DT_PATH: device/infinix/X6837
   TARGET: vendorbootimage
   TZ: Asia/manila
 #  DT_BRANCH: WIP
@@ -73,7 +73,7 @@ jobs:
     - name: Checkout device tree
       uses: actions/checkout@v2
       with:
-       path: twrp/device/infinix/X676C
+       path: twrp/device/infinix/X6837
 
     - name: Set Swap Space
       uses: pierotofy/set-swap-space@master
@@ -84,15 +84,15 @@ jobs:
       run: |
        PATH=~/bin:$PATH
        cd twrp
-       export ALLOW_MISSING_DEPENDENCIES=true && source build/envsetup.sh &&lunch twrp_X676C-eng && mka $TARGET -j$(nproc --all)
-       cp  out/target/product/X676C/vendor_boot.img    out/target/product/X676C/vendor_boot-X676C-$(date +"%Y%m%d").img  
+       export ALLOW_MISSING_DEPENDENCIES=true && source build/envsetup.sh &&lunch twrp_X6837-eng && mka $TARGET -j$(nproc --all)
+       cp  out/target/product/X6837/vendor_boot.img    out/target/product/X6837/vendor_boot-X6837-$(date +"%Y%m%d").img  
              
     - name: Release recovery image
       uses: softprops/action-gh-release@v1
       env:
        GITHUB_TOKEN: ${{ secrets.TEST }}
       with:
-       tag_name: Infinix_Note_12_2023-X676C_V848
+       tag_name: Infinix_HOT_40_Pro-X6837
        name: TWRP370_12-twrp-12
        files: | 
-         twrp/out/target/product/X676C/*boot*.img
+         twrp/out/target/product/X6837/*boot*.img
