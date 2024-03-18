@@ -1,5 +1,5 @@
 cc_library_static {
-    name: "libinit_X676C",
+    name: "libinit_X6837",
     header_libs: [
         "libbase_headers",
     ],
@@ -10,6 +10,6 @@ cc_library_static {
     static_libs: [
         "libbase",
     ],
-    srcs: ["init_X676C.cpp"],
+    srcs: ["init_X6837.cpp"],
     recovery_available: true,
 }
