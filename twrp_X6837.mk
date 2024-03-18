@@ -31,12 +31,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 # Device specific configs.
-$(call inherit-product, device/infinix/X676C/device.mk)
+$(call inherit-product, device/infinix/X6837/device.mk)
 
 ## Device identifier. This must come after all inclusions.
-PRODUCT_DEVICE := X676C
-PRODUCT_NAME := twrp_X676C
+PRODUCT_DEVICE := X6837
+PRODUCT_NAME := twrp_X6837
 PRODUCT_BRAND := Infinix
-PRODUCT_MODEL := Infinix X676C
+PRODUCT_MODEL := Infinix X6837
 PRODUCT_MANUFACTURER := INFINIX
-PRODUCT_RELEASE_NAME := Infinix Note 12 2023
+PRODUCT_RELEASE_NAME := Infinix HOT 40 Pro
